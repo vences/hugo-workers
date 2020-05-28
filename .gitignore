@@ -1,6 +1,5 @@
 # Hugo default output directory
 /public
-/themes
 
 # Wrangler output file
 /workers-site
