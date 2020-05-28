@@ -1,0 +1,4 @@
+baseURL = "https://mon-blog.vence.tech/"
+languageCode = "en-en"
+title = "Mon site Hugo"
+theme = "ananke"
