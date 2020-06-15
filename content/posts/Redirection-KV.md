@@ -6,6 +6,7 @@ draft: false
 
 Voici un exemple de Workers utilisant REDIRECT qui est un KV Namespace contenant l'ensemble des chemins de redirection:
 
+
 ```
 addEventListener('fetch', async event => {
   event.respondWith(handleRequest(event.request))
@@ -24,8 +25,10 @@ async function handleRequest(request) {
 ```
 
 `REDIRECT` doit être attaché au Workers dans la partie Settings > KV Namespace Bindings
+
 Le nom de la variable `REDIRECT` doit ensuite pointer vers le nom de la KV contenant les redirections, par example:
 
-Key                 | Value
---------------------|------------------------
-/redirect-workers/1 | https://www.example.com
+
+Key                   | Value
+----------------------|--------------------------
+`/redirect-workers/1` | `https://www.example.com`
