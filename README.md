@@ -35,6 +35,8 @@ Les modifications suivantes ont été apportées afin d'intégrer le support du 
   * Ajout de `wrangler-actions` avec un secret `CF_ACCOUNT_ID`
   * Ajout de `repository_dispatch:` 
 
+Vous devez également changer la `route` et `zone_id` dans le fichier `wrangler.toml` pour que le deploiement soit un succes sur votre compte.
+
 ## Pour aller plus loin
 
 Voici les documentaions sur lesquelles je me suis reposée:
