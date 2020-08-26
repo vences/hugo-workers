@@ -1,6 +1,6 @@
 name = "mon-blog"
 type = "webpack"
-account_id = "42ac0aa76a8d6368913cdcc93e1df204"
+account_id = ""
 workers_dev = false
 route = "mon-blog.vence.tech/*"
 zone_id = "e1dff329fb167a506d1b814ceea7435d"

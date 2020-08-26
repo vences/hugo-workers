@@ -4,6 +4,8 @@ Cette démo utilise Cloudflare et Github Action pour déployer votre blog de man
 
 Ce projet a été réalisé pour supporter ma session sur [Cloudflare TV](https://cloudflare.tv/event/7whW44ANFW9dTakUb3nRtA).
 
+Suite a la publication du [boutton déployer](https://developers.cloudflare.com/workers/platform/deploy-button), des modifications ont été apportées afin de vous permettre de deployer ce projet rapidement sur votre compte Cloudflare (cf. section [déploiement](#déplopiement))
+
 ## Objectifs
 
 * Simplifier le déploiement et le maintient de votre blog
@@ -22,6 +24,16 @@ Ce projet s'appuie sur:
 * **Github Action** : la méthode d'integration Continue mise en place par Github. Le fichier de configuration est [main.yml](https://github.com/vences/hugo-workers/blob/master/.github/workflows/main.yml)
 * **Wrangler** : l'outil d’orchestration de Cloudflare Workers. Le fichier de configuration est [wrangler.toml](https://github.com/vences/hugo-workers/blob/master/wrangler.toml)
 * **Hugo** : framework permettant la génération de site web. Le fichier de configuration est [config.toml](https://github.com/vences/hugo-workers/blob/master/config.toml)
+
+## Déploiement
+
+Si vous souhaiter deployer simplement ce projet vous pouvez utiliser le boutton suivant: [![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button?paid=true)](https://deploy.workers.cloudflare.com/?url=https://github.com/vences/hugo-workers&paid=true)
+
+Les modifications suivantes ont été apportées afin d'intégrer le support du boutton :
+* Suppression de `account_id` dans `wrangler.toml`
+* Modification du workflow Github Actions `.github/workflows/main.yml` avec:
+  * Ajout de `wrangler-actions` avec un secret `CF_ACCOUNT_ID`
+  * Ajout de `repository_dispatch:` 
 
 ## Pour aller plus loin
 
